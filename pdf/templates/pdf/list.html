@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+{% for profile in profiles %}
+<div>
+  {{ profile.name }}
+    <a href="/{{profile.id}}" class="btn">Download cv</a>
+</div>
+{% endfor %}
+
+</body>
+</html>

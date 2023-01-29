@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.accept),
     path('<int:pk>', views.resume, name='resume'),
+    path('list/', views.list)
 ]
